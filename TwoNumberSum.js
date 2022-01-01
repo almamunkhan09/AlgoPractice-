@@ -31,7 +31,37 @@ return result;
 
 }
 
+
+function twoNumberSum2(array, targetSum) {
+	
+	
+	
+	
+	for (let  i = 0;i<array.length;i++){
+		
+		const firstNum = array[i];
+		const secondNum = targetSum - firstNum;
+		
+		
+		if(array.includes(secondNum) && array[i] != secondNum){
+			return [firstNum,secondNum];
+		}
+		
+		
+	
+	
+	
+	}
+	
+	return [];
+  // Write your code here.
+}
+
+
+
 console.log(twoNumberSum([3, 5, -4, 8, 11, 1, -1, 6],10));
+console.log(twoNumberSum2([3, 5, -4, 8, 11, 1, -1, 6],10));
+
 
 
 // Do not edit the line below.
