@@ -1,3 +1,10 @@
+// This function return the name of the winner. The Compitition aarray represent
+// the match between teams.The first element is Home team and
+// The result array represents the point won by the home team.There is no draw
+//Task is to find the winner of the tournament
+
+
+
 function tournamentWinner(competitions, results) {
 	
 	let winnerTeams = [];
@@ -34,3 +41,9 @@ function tournamentWinner(competitions, results) {
 }
 
 // Do not edit the line below.
+
+console.log(tournamentWinner([
+    ["HTML", "C#"],
+    ["C#", "Python"],
+    ["Python", "HTML"]
+  ],[0, 0, 1]));
