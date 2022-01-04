@@ -5,14 +5,22 @@
 function sortedSquaredArray(array){
 	
 	
-	let x = [];
+// 	let x = [];
 	
-	for (let i = 0; i<array.length;i++){
+// 	for (let i = 0; i<array.length;i++){
 		
-        x.push(array[i]*array[i]);
+//         x.push(array[i]*array[i]);
 		
-		}
-	return x.sort((a,b)=> a-b);
+// 		}
+// 	return x.sort((a,b)=> a-b);
+
+
+for (let i = 0; i<array.length;i++){
+    array[i] = Math.pow(array[i],2);
+
+    }
+return array.sort((a,b)=> a-b);
+
 }
 
 
