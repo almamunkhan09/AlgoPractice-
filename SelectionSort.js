@@ -27,8 +27,6 @@ function selectionSort(array) {
 
        }
        
-
-
        if(array[i]!=minimum){
            
            let temp = array[i];
@@ -37,16 +35,10 @@ function selectionSort(array) {
            
            //swap(array[i],array[minposition]); // !!! need to find why this line did not worked.
        }
-       
-
-       
-
-       
-
-
-     
+    
     }
-   return array;
+
+    return array;
   }
 
   
