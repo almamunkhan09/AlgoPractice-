@@ -17,4 +17,20 @@ const fibo = n =>{
     
 }
 
-console.log(fibo(0));
+console.log(fibo(3));
+
+const fibonachi = n =>{
+    const fibo = [0,1];
+    for(let i =3;i<=n;i++){
+        const nextfibo = fibo[0] + fibo[1];
+        fibo[0] = fibo[1];
+        fibo[1] = nextfibo;
+
+
+    }
+
+    return (n>=2)? fibo[1]:fibo[0];
+
+}
+
+console.log(fibonachi(3));
